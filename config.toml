@@ -1,0 +1,82 @@
+title = "i33ym"
+base_url = "/"
+description = "personal blog."
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+taxonomies = [
+  { name = "categories", feed = true },
+  { name = "tags", feed = true },
+]
+
+default_language = "en"
+
+[translations]
+no_posts = "no posts yet"
+remove_filter = "remove filter"
+filtering_for = "filtering for"
+made_with = "made with"
+table_of_contents = "table of contents"
+language = "language"
+site = "site"
+
+[languages.uz]
+title = "i33ym"
+description = "shaxsiy blog."
+
+taxonomies = [
+  { name = "categories", feed = true },
+  { name = "tags", feed = true },
+]
+
+[languages.uz.translations]
+no_posts = "hozircha postlar yo'q"
+remove_filter = "saralashni o'chirish"
+filtering_for = "uchun saralash"
+made_with = "ishlab chiqildi"
+table_of_contents = "mundarija"
+language = "til"
+site = "sayt"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = false
+
+[extra]
+date_format = "%d-%m-%Y"
+webserver_sends_csp_headers = true
+language_switcher = true
+translations = [
+  { code = "en", name = "english" },
+  { code = "uz", name = "o'zbekcha" },
+]
+
+[extra.table_of_contents]
+show = true
+max_level = 2
+visible_on_load = true
+
+[[extra.main_menu]]
+name = "home"
+name_uz = "uy"
+url = "@/_index.md"
+
+[[extra.main_menu]]
+name = "about"
+name_uz = "biz haqimizda"
+url = "@/about.md"
+
+[[extra.main_menu]]
+name = "projects"
+name_uz = "loyihalar"
+url = "@/projects.md"
+
+[[extra.main_menu]]
+name = "archive"
+name_uz = "arxiv"
+url = "@/blog/_index.md"
