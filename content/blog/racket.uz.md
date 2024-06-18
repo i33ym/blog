@@ -24,8 +24,14 @@ til bu shunchaki vositachi mexanizm. nega mushukni aynan mushuk, balki kuchuk em
 kerakli dasturlarni o'rnatish
 ---
 
-demak biz kampyuterimiz bilan racket orqali gapirmoqchi bo'lsak, birinchi navbatda o'sha "tarjimon" vositachini kampyuterimizga o'rnatib olishimi kerak bo'ladi. buning uchun racket ning [racket-lang.org](https://racket-lang.org) rasmiy vebsaytiga tashrif buyurib, so'ngra "download" qismiga o'ting.
+demak biz kampyuterimiz bilan racket orqali gapirmoqchi bo'lsak, birinchi navbatda o'sha "tarjimon" vositachini kampyuterimizga o'rnatib olishimi kerak bo'ladi. buning uchun racket ning [racket-lang.org](https://racket-lang.org) rasmiy vebsaytiga tashrif buyurib, so'ngra "download" qismiga o'ting va o'zingizning platformangizga mos dasturni yuklab oling.
 
-![racket rasmiy vebsayti](/static/img/racket-official.png)
+![racket-logo](https://download.racket-lang.org/logo-and-text-1-2.png)
 
-va o'zingizning platformangizga mos dasturni yuklab oling.
+agarda siz bu dasturni muvaffaqiyatli tarzda o'rnatgan bo'lsangiz, u sizning qurilmangizda (kampyuteringizda) 3 ta juda eng asosiy dasturlarni o'rnatadi:
+
+* racket, bu biz aytib o'tgan "tarjimon" ning xuddi o'zi. dasturlash tilida uni interpreter yoki compiler deb atashingiz mumkin. interpreter (tarjimon) va compiler (yig'uvchi) o'rtasida juda muhim farqlar bor, lekin hozirlikcha siz ularni bir xil deb o'ylasangiz ham hech qanday qo'pol xatolikga yo'l qo'ymagan bo'lasiz.
+
+* drracket, bu racket dasturlash tilida kod (dastur) yozishimiz uchun kerak bo'ladigan tahrirchi, grafik dasturdir. drracket racket dasturlash tilida kod yozish uchun 100% zarur bo'lgan dastur emas, u shunchaki bizning kunimizni oson qiladi xolos. faktlarga asoslanib gapiradigan bo'lsak ham, siz drracket ni ishlatmasdan turib ham bemalol kod (dastur) yoza olasiz.
+
+* raco, bu racket kodlarni (ingliz tilida "source code") haqiqiy dasturga (ingliz tilida "executable" yoki ba'zan "binary") o'girish, yozayotgan kodimizga boshqa dasturchilar tomonidan yozilgan qo'shimcha kutubxonalarni (ingliz tilida "library") olib kelish va shunga o'xshah muhim vazifalarni bajarish uchun ishlatiladigan dasturdir.
